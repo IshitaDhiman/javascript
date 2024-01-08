@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Learning</h1>
+    <button id="stop">stop</button>
+
+    <script>
+        //setTimeout(function(){
+           // console.log("ishita");
+
+        //},3000)
+
+        const changeMe=function(){
+            document.querySelector("h1").innerHTML="Veryy easyyyy!!!!"
+        }
+        const timer=setTimeout(changeMe,3000);//passing reference of handler function
+
+        document.querySelector("#stop").addEventListener('click',function(){
+            clearTimeout(timer);//passing the reference of which timeout to stop
+            console.log("stopped before time");
+        })
+
+    </script>
+</body>
+</html>

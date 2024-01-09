@@ -1,0 +1,10 @@
+.bg-design{
+    text-align: center;
+    padding: 30px;
+}
+.bt-design{
+    padding: 10px;
+    background-color: rgb(78, 59, 78);
+    color: azure;
+    border-radius: 5px;
+}
